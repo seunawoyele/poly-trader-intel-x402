@@ -1,0 +1,23 @@
+{
+  "name": "poly-trader-intel-x402",
+  "version": "1.0.0",
+  "description": "Polymarket Trader Intelligence API — paid per-query via x402 USDC micropayments",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@circle-fin/x402-batching": "latest",
+    "@x402/core": "^2.18.0",
+    "@x402/evm": "^2.18.0",
+    "@x402/express": "^2.18.0",
+    "@x402/extensions": "^2.18.0",
+    "express": "^4.21.0",
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
